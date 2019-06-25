@@ -1,6 +1,8 @@
 #!flask/bin/python
 import base64
 from flask import Flask, jsonify
+import asyncio
+
 
 app = Flask(__name__)
 
@@ -45,7 +47,27 @@ def get_image():
 #         'done': False
 #     }
 #     tasks.append(task)
+
+#DO THE ML HERE, MUST WAIT SYNC CALL
+
+# async def g():
+#     # Pause here and come back to g() when f() is ready
+#     r = await f()
+#     return r
+
 #     return jsonify({'task': task}), 201
+
+
+# pip3 install --upgrade pip3 aiohttp aiofiles
+
+
+
+
+
+
+
+
+
 
 
 
